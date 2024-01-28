@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<title>Biken Moirangthem</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"> -->
+
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<style>
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto", sans-serif
+  }
+
+  .custom-container {
+    display: flex;
+    align-items: top;
+    margin-bottom: 20px;
+  }
+
+  .custom-icon {
+    margin-right: 10px;
+    padding-top: 10px;
+  }
+
+  .custom-content {
+    flex-grow: 1;
+
+  }
+
+  .p1 {
+    text-align: justify;
+  }
+
+  @media only screen and (min-width: 600px) {
+
+    .left,
+    .main,
+    .right {
+      position: sticky;
+      top: 0px;
+    }
+
+    .w3-text-golden {
+      color: #FFD700;
+    }
+
+    .fa-beat {
+      animation: fa-beat 4s ease infinite;
+    }
+
+    @keyframes fa-beat {
+      0% {
+        transform: scale(1);
+      }
+
+      5% {
+        transform: scale(1.25);
+      }
+
+      20% {
+        transform: scale(1);
+      }
+
+      30% {
+        transform: scale(1);
+      }
+
+      35% {
+        transform: scale(1.25);
+      }
+
+      50% {
+        transform: scale(1);
+      }
+
+      55% {
+        transform: scale(1.25);
+      }
+
+      70% {
+        transform: scale(1);
+      }
+    }
+  }
+
+  /* .text span {
+  font-size: 15px;
+  padding: 0 0px;
+  text-transform: uppercase;
+  color: #000;
+  animation: zoomup 2s linear infinite;
+  animation-delay: calc(200ms * var(--i));
+} */
+  .text {
+    font-size: 18px;
+    padding: 0 0px;
+    text-transform: uppercase;
+    color: #000;
+    display: inline-block;
+    animation: zoomup 2s linear infinite;
+    animation-delay: calc(200ms * var(--i))
+  }
+
+  @keyframes zoomup {
+
+    0%,
+    100% {
+      color: #00c2ba;
+      filter: blur(1px);
+      text-shadow: 0 0 10px #00c2ba, 0 0 20px #00c2ba, 0 0 30px #00c2ba,
+        0 0 40px #00c2ba, 0 0 60px #00c2ba, 0 0 80px #00c2ba, 0 0 100px #00c2ba,
+        0 0 120px #00c2ba;
+    }
+
+    5%,
+    95% {
+      filter: blur(0);
+      color: #000;
+      text-shadow: none;
+    }
+  }
+
+  .container {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline;
+  }
+
+</style>
+<script>
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 700)
+      $('nav').addClass('left');
+    else
+      $('nav').removeClass('left');
+  });
+
+</script>
+
+<body class="w3-light-grey" >
+  <!-- <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0" nonce="fxRRoyE4"></script> -->
+
+
+  <!-- Page Container -->
+  <div class="w3-content w3-margin-top" style="max-width: 3000px; padding-left: 22%;">
+
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+
+
+
+      <!-- Right Column -->
+      <div class="w3-twothird">
+
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i
+              class="fas fa-chalkboard-teacher fa-fw w3-margin-right w3-large w3-text-teal"></i>Moirangthem Biken Singh
+          </h2>
+
+          <div class="w3-container" id="about">
+            <div class="custom-container">
+
+              <div class="custom-icon" style="padding-top: 3%">
+                <i class='fa-fw w3-large w3-text-teal'><img src="photo/biken.png" width="150" height="180" alt="Biken" /></i>
+              </div>
+              <!--<h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6> -->
+              <div class="custom-content">
+                <p class="p1" style="font-size: 14px">I am currently pursuing my Ph.D. degree in Computer Science and Engineering at the Indian
+                  Institute of Technology (BHU), Varanasi, India. Previously,
+                  I completed my M.Tech degree under the supervision of <a href="https://www.gkverma.in"
+                    target="_blank">Dr. Gyanendra Kumar Verma</a> at the National Institute of Technology, Kurukshetra, India, in 2021, 
+				  and my B.Tech degree in Computer Science and Engineering under
+                  the guidance of <a href="https://www.nitmanipur.ac.in/Department_FacultyProfileNew.aspx?nDeptID=oq"
+                    target="_blank">Dr. Chingakham Neeta Devi</a> at the National Institute of Technology, Manipur, India, in 2018. 
+					My current research interests include IoT, AI/ML, and Federated Learning in Smart Healthcare.
+                </p>
+              </div>
+            </div>			  	  
+          </div>
+        </div>
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container">
+            <h5 class="w3-opacity" style="padding-top: 15px"><b>Activity</b></h5>
+
+            <div class="custom-container">
+              <div class="custom-icon">
+                <i class='fa-fw w3-large w3-text-teal'><img src="photo/IITBHU_logo.png" width="40" height="40" alt="iitbhu" /></i>
+              </div>
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom: 0;"><b>Indian Institute of Technology (Banaras Hindu University), Varanasi</b></h5>
+                <h6 class="w3-text-teal" style="margin-top: 0;margin-bottom: 0;font-size: 14px;">Jul 2021 - Present</h6>
+                <!--
+				<h6 class="w3-text-teal" style="margin-top: 0;margin-bottom: 0;font-size: 14px;">July 2019 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+				<p class="p1" style="margin-top: 0"><b class="w3-opacity">Developing Intelligent Transportation
+                    System</b><br>Working towards
+                  Developing a Causal Model for Understanding the Driving Behavior through Analyzing the Interaction
+                  between Different Driving Maneuvers and On-road Objects to Sense the Driving Environment under the
+                  supervision of Prof. <a href="https://cse.iitkgp.ac.in/~bivasm/" target="_blank">Bivas Mitra</a> and
+                  Prof. <a href="https://cse.iitkgp.ac.in/~sandipc/" target="_blank">Sandip Chakraborty</a> in the
+                  Department of Computer Science and Engineering, Indian Institute of Technology, Kharagpur.</p>
+				-->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container" id="publication">
+            <h5 class="w3-opacity" style="padding-top: 15px"><b>Selected Publications</b></h5>
+			
+			<p class="p1" style="margin-top: 0;font-size: 16px">For a complete list of publications, please visit my Google Scholar profile 
+						<a href="https://scholar.google.co.in/citations?hl=en&user=BGe52_8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">here.</a></p>
+
+            <div class="custom-container">
+              <!-- <div class="custom-content" style="padding-left: 50px;"> -->
+			  <div class="custom-content">
+                <!-- <h6 class="w3-text-teal" style="margin-bottom: 0;">2024</h6> -->
+				<h5 class="w3-opacity" style="margin-bottom: 0;font-size: 16px"><b>Stable Matching based Revenue Maximization for Federated Learning in UAV-Assisted WBANs</b></h5>
+                <p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 15px"><u>Moirangthem Biken Singh</u>, Himanshu Singh, Ajay Pratap</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 14px">IEEE Transactions on Services Computing (TSC), 2024</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0"> <a href="#" target="_blank">[paper]</a> </p>
+                <hr>
+				
+				<h5 class="w3-opacity" style="margin-bottom: 0;font-size: 16px"><b>Blockchain and Fog Access Point Integrated Healthcare System for 
+																						Contact Tracing and Infection Probability Evaluation</b></h5>
+                <p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 15px"><u>Moirangthem Biken Singh</u>, Suraj Mahawar, Himanshu Singh, Shilpi Kumari, Ajay Pratap</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 14px">25th International Conference on Distributed Computing and Networking (ICDCN), 2024</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0"> <a href="https://dl.acm.org/doi/abs/10.1145/3631461.3632090" target="_blank">[paper]</a> </p>
+                <hr>
+				
+				<h5 class="w3-opacity" style="margin-bottom: 0;font-size: 16px"><b>Criticality-Driven Scheduling for UAV-Assisted Remote Health Monitoring System</b></h5>
+                <p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 15px"><u>Moirangthem Biken Singh</u>, Himanshu Singh, Ajay Pratap</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 14px">17th IEEE International Conference on Advanced Networks and Telecommunications Systems
+																						(ANTS), 2023</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0"> <a href="#" target="_blank">[paper]</a> </p>
+                <hr>
+				
+				<h5 class="w3-opacity" style="margin-bottom: 0;font-size: 16px"><b>Stochastic On-Time Arrival Path Prediction and Dynamic Programming for Criticality 
+																						Aware Mobile Healthcare System
+						<span class="w3-tag w3-teal w3-round">(Received Best Paper Award - 2nd runner-up)</span></b></h5>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 15px">Himanshu Singh, <u>Moirangthem Biken Singh</u>, Akash Patel, Ajay Pratap</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 14px">17th IEEE International Conference on Advanced Networks and Telecommunications Systems
+																						(ANTS), 2023</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0"> <a href="#" target="_blank">[paper]</a> </p>
+                <hr>
+				
+				<h5 class="w3-opacity" style="margin-bottom: 0;font-size: 16px"><b>Energy-Efficient and Privacy-Preserving Blockchain Based Federated Learning 
+																						for Smart Healthcare System</b></h5>
+                <p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 15px"><u>Moirangthem Biken Singh</u>, Himanshu Singh, Ajay Pratap</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 14px">IEEE Transactions on Services Computing (TSC), 2023</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0"> <a href="https://ieeexplore.ieee.org/abstract/document/10328447" target="_blank">[paper]</a> </p>
+                <hr>
+				
+				<h5 class="w3-opacity" style="margin-bottom: 0;font-size: 16px"><b>UAV and UGV Assisted Path Planning for Sensor Data Collection 
+																						in Precision Agriculture</b></h5>
+                <p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 15px">Himanshu Singh, <u>Moirangthem Biken Singh</u>, Harsh Pratik, Ajay Pratap</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 14px">11th International Symposium on Electronic Systems Devices and Computing (ESDC), 2023</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0"> <a href="https://ieeexplore.ieee.org/abstract/document/10149861" target="_blank">[paper]</a> </p>
+                <hr>
+				
+				<h5 class="w3-opacity" style="margin-bottom: 0;font-size: 16px"><b>COVID-19 Spread Detection and Controlling with Fog-based Infection 
+																						Probability Evaluation Model</b></h5>
+                <p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 15px"><u>Moirangthem Biken Singh</u>, Suraj Mahawar, Himanshu Singh, Ajay Pratap</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 14px">24th International Conference on Distributed Computing and Networking (ICDCN), 2023</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0"> <a href="https://dl.acm.org/doi/abs/10.1145/3571306.3571435" target="_blank">[paper]</a> </p>
+                <hr>
+				
+				<h5 class="w3-opacity" style="margin-bottom: 0;font-size: 16px"><b>Optimized Doctor Recommendation System using Supervised Machine Learning</b></h5>
+                <p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 15px">Himanshu Singh, <u>Moirangthem Biken Singh</u>, Ranju Sharma, Jayesh Gat
+																						Ayush Kumar Agrawal, Ajay Pratap</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 14px">24th International Conference on Distributed Computing and Networking (ICDCN), 2023</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0"> <a href="https://dl.acm.org/doi/abs/10.1145/3571306.3571372" target="_blank">[paper]</a> </p>
+                <hr>
+				
+				<h5 class="w3-opacity" style="margin-bottom: 0;font-size: 16px"><b>Criticality and utility-aware fog computing system for remote health monitoring</b></h5>
+                <p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 15px"><u>Moirangthem Biken Singh</u>, Navneet Taunk, Naveen Kumar Mall, Ajay Pratap</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 14px">IEEE Transactions on Services Computing (TSC), 2023</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0"> <a href="https://ieeexplore.ieee.org/abstract/document/9893410" target="_blank">[paper]</a> </p>
+              </div>
+            </div>
+             
+					
+			<!--
+			<div class="custom-container">
+              <div class="custom-content" style="padding-left: 50px;">
+                <h6 class="w3-text-teal" style="margin-bottom: 0;">2022</h6>
+				<h5 class="w3-opacity" style="margin-bottom: 0;font-size: 16px"><b>Blockchain and Fog Access Point Integrated Healthcare System for 
+																						Contact Tracing and Infection Probability Evaluation</b></h5>
+                <p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 15px"><u>Moirangthem Biken Singh</u>, Suraj Mahawar, Himanshu Singh, Shilpi Kumari, Ajay Pratap</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0;font-size: 14px">25th International Conference on Distributed Computing and Networking (ICDCN), 2024</p>
+				<p class="p1" style="margin-bottom: 0;margin-top: 0"> <a href="https://dl.acm.org/doi/abs/10.1145/3631461.3632090" target="_blank">[paper]</a> </p>
+                <hr>
+              </div>
+            </div>
+			-->
+
+          </div>
+        </div>
+		
+		<!--
+		<div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container" id="publication">
+            <h5 class="w3-opacity" style="padding-top: 15px"><b>Arxiv</b></h5>
+
+            <div class="custom-container">
+
+              <div class="custom-content" style="padding-left: 50px;">
+                <h6 class="w3-text-teal" style="margin-bottom: 0;">2024</h6>
+
+                <p class="p1" style="margin-top: 0;font-size: 16px">
+                  <b>Debasree Das</b>, Shameek Bhattacharjee, Sandip Chakraborty, Bivas Mitra and Sajal K. Das,
+                  “Early Detection of Driving Maneuvers for Proactive Congestion Prevention”, in IEEE PerCom,
+                  (December 2023). <a href="#" target="_blank">[paper]</a>                  
+                </p>
+
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+		-->
+		
+		<div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container" id="experience">
+            <h5 class="w3-opacity" style="padding-top: 15px"><b>Projects</b></h5>
+
+            <div class="custom-container">
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom:0;"><b>Affect Analysis from EEG Signal using Convolutional LSTM Network</b></h5>
+					<div class="custom-container">
+						<div class="custom-icon">
+							<i class='fa-fw w3-large w3-text-teal'><img src="photo/NITKU_logo.png" width="30" height="30" alt="nitku" /></i>
+						</div>
+						<div class="custom-content">
+							<p class="p1" style="margin-top: 0;margin-bottom:0;font-size: 16px">Associated with National Institute of Technology, Kurukshetra</p>
+							<h6 class="w3-text-teal" style="margin-top: 0;margin-bottom:0;font-size: 14px;">Aug 2020 - Sep 2021</h6>
+						</div>
+					</div>
+                <hr>
+              </div>
+            </div>
+			
+            <div class="custom-container">
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-top: 0;margin-bottom: 0;"><b>Text Recongnition from Natural Scene and Document Images for Manipuri Meetei Mayek Script</b></h5>
+					<div class="custom-container">
+						<div class="custom-icon">
+							<i class='fa-fw w3-large w3-text-teal'><img src="photo/NITMN_logo.png" width="30" height="30" alt="nitmn" /></i>
+						</div>
+						<div class="custom-content">
+							<p class="p1" style="margin-top: 0;margin-bottom: 0;;font-size: 16px">Associated with National Institute of Technology, Manipur</p>
+							<h6 class="w3-text-teal" style="margin-top: 0;margin-bottom:0;font-size: 14px;">Jun 2017 - May 2018</h6>
+						</div>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		
+
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container" id="experience">
+            <h5 class="w3-opacity" style="padding-top: 15px"><b>Experience</b></h5>
+
+            <div class="custom-container">
+              <div class="custom-icon">
+                <i class='fa-fw w3-large w3-text-teal'><img src="photo/IITBHU_logo.png" width="45" height="45" alt="iitbhu" /></i>
+              </div>
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom:0;"><b>Indian Institute of Technology (Banaras Hindu University), Varanasi</b></h5>
+                <h6 class="w3-text-teal" style="margin-top: 0;margin-bottom:0;font-size: 14px;">July 2021 - present</h6>
+                <!--
+				<p class="p1" style="margin-top: 0">Worked as an Associate in UI and backend development using
+                  technologies such as J2EE(Java
+                  8, HTML5, CSS, Bootstrap, JavaScript, Ajax) in Internal Project and used SmallTalk language in Visual
+                  Age SmallTalk Tool for project in Insurance domain at Cognizant Technology Solutions India Private
+                  Ltd. from September 2018 to July 2019.</p>
+				-->
+                <hr>
+              </div>
+            </div>
+			
+            <div class="custom-container">
+              <div class="custom-icon">
+                <i class='fa-fw w3-large w3-text-teal'><img src="photo/MNIT_logo.png" width="45" height="45" alt="mnit" /></i>
+              </div>
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom: 0;"><b>Summer Internship (Under Ishan Vikash Programme)</b></h5>
+                <p class="p1" style="margin-top: 0;margin-bottom: 0;font-size: 16px">National Institute of Technology, Allahabad</p>
+				<h6 class="w3-text-teal" style="margin-top: 0;margin-bottom: 0;margin-bottom:0;font-size: 14px">May 2017 - Jun 2017</h6>
+                <!--
+				<p class="p1" style="margin-top: 0">Worked as a Teaching Assistant in the department of Computer Science
+                  & Engineering, IIEST, Shibpur from July 2017 to June 2018.</p>
+				-->
+				<hr>
+              </div>
+            </div>
+
+			<div class="custom-container">
+              <div class="custom-icon">
+                <i class='fa-fw w3-large w3-text-teal'><img src="photo/IITG_logo.png" width="45" height="45" alt="iitguw" /></i>
+              </div>
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom: 0;"><b>Winter Internship</b></h5>
+				<p class="p1" style="margin-top: 0;margin-bottom: 0;font-size: 16px">Indian Institute of Technology, Guwahati</p>
+                <h6 class="w3-text-teal" style="margin-top: 0;margin-bottom: 0;font-size: 14px">Dec 2016</h6>
+                <!--
+				<p class="p1" style="margin-top: 0">Worked as a Teaching Assistant in the department of Computer Science
+                  & Engineering, IIEST, Shibpur from July 2017 to June 2018.</p>
+				  -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <!--
+		<div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container" id="achievement">
+            <h5 class="w3-opacity" style="padding-top: 15px"><b>Achievements</b></h5>
+
+            <div class="custom-container">
+              <div class="custom-icon">
+                <i class='fa-fw w3-large w3-text-teal'><img src="kgp.png" width="40" height="40" alt="mdm" /></i>
+              </div>
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom: 0;"><b>MDM</b></h5>
+                <h6 class="w3-text-teal" style="margin-top: 0;margin-bottom: 0; font-size: 14px;">2022</h6>
+                <p class="p1" style="margin-top: 0;">Received <b>Best Paper Runner Up Award</b> at IEEE, MDM for the
+                  paper titled, <b>"DriBe:
+                    On-road Mobile Telemetry for Locality-neutral Driving Behavior Annotation"</b>.</p>
+                <hr>
+              </div>
+            </div>
+
+            <div class="custom-container">
+              <div class="custom-icon">
+                <i class='fa-fw w3-large w3-text-teal'><img src="kgp.png" width="40" height="40" alt="ibm" /></i>
+              </div>
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom: 0;"><b>IBM</b></h5>
+                <h6 class="w3-text-teal" style="margin-top: 0;margin-bottom: 0; font-size: 14px;">2022</h6>
+                <p class="p1" style="margin-top: 0;">Received <b>Second Winner Prize</b> at IBM, Maitreyee for research
+                  vlog.</p>
+                <hr>
+              </div>
+            </div>
+
+            <div class="custom-container">
+              <div class="custom-icon">
+                <i class='fa-fw w3-large w3-text-teal'><img src="kgp.png" width="40" height="40" alt="iiest" /></i>
+              </div>
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom: 0;"><b>IIEST</b></h5>
+                <h6 class="w3-text-teal" style="margin-top: 0;margin-bottom: 0; font-size: 14px;">2018</h6>
+                <p class="p1" style="margin-top: 0;">Awarded <b>Institute Silver Medal</b> at IIEST, Shibpur for
+                  <b>ranking 1st</b> in Computer
+                  Science and Engineering Department in M.Tech., in December, 2018.</p>
+                <hr>
+              </div>
+            </div>
+
+            <div class="custom-container">
+              <div class="custom-icon">
+                <i class='fa-fw w3-large w3-text-teal'><img src="kgp.png" width="40" height="40"
+                    alt="dewangmehta" /></i>
+              </div>
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom: 0;"><b>Dewang Mehta</b></h5>
+                <h6 class="w3-text-teal " style="margin-top: 0;margin-bottom: 0; font-size: 14px;" b>2016</h6>
+                <p class="p1" style="margin-top: 0;">Received <b>Shri Dewang Mehta IT Award</b>, in February, 2016</p>
+                <hr>
+              </div>
+            </div>
+
+            <div class="custom-container">
+              <div class="custom-icon">
+                <i class='fa-fw w3-large w3-text-teal'><img src="kgp.png" width="40" height="40" alt="dst" /></i>
+              </div>
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom: 0;"><b>DST</b></h5>
+                <h6 class="w3-text-teal" style="margin-top: 0;margin-bottom: 0; font-size: 14px;">2010</h6>
+                <p class="p1" style="margin-top: 0;">Received <b>Inspire Award Warrant</b> from <b>Department of Science
+                    and Technology,
+                    Government of India,</b> 2010.</p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+		-->
+		
+		
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <div class="w3-container" id="education">
+            <h5 class="w3-opacity " style="padding-top: 15px"><b>Education</b></h5>
+
+            <div class="custom-container">
+              <div class="custom-icon">
+                <i class='fa-fw w3-large w3-text-teal'><img src="photo/IITBHU_logo.png" width="45" height="45" alt="iitbhu" /></i>
+              </div>
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom: 0;"><b>Indian Institute of Technology (Banaras Hindu University), Varanasi</b> </h5>
+                <!-- <h6 class="w3-text-teal" style="margin-top: 0;margin-bottom: 0; font-size: 14px;">Jul 2021 - <span class="w3-tag w3-teal w3-round">Present</span></h6> -->
+                <p class="p1" style="margin-top: 0;margin-bottom: 0;font-size: 16px">Doctor of Philosophy - PhD, Computer Science and Engineering</p>
+				<h6 class="w3-text-teal" style="margin-top: 0;margin-bottom: 0; font-size: 14px;">Jul 2021 - Present</h6>
+                <hr>
+              </div>
+            </div>
+
+            <div class="custom-container">
+              <div class="custom-icon">
+                <i class='fa-fw w3-large w3-text-teal'><img src="photo/NITKU_logo.png" width="45" height="45" alt="nitkur" /></i>
+              </div>
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom: 0;"><b>National Institute of Technology, Kurukshetra</b></h5>
+				<p class="p1" style="margin-top: 0;margin-bottom: 0;font-size: 16px">Master of Technology - MTech, Computer Engineering</p>
+                <h6 class="w3-text-teal" style="margin-top: 0;margin-bottom: 0; font-size: 14px;">Jul 2019 - Sep 2021</h6>
+                <hr>
+              </div>
+            </div>
+
+            <div class="custom-container">
+              <div class="custom-icon">
+                <i class='fa-fw w3-large w3-text-teal'><img src="photo/NITMN_logo.png" width="45" height="45" alt="nitmn" /></i>
+              </div>
+              <div class="custom-content">
+                <h5 class="w3-opacity" style="margin-bottom: 0;"><b>National Institute of Technology, Manipur</b></h5>
+				<p class="p1" style="margin-top: 0;margin-bottom: 0;font-size: 16px">Bachelor of Technology - BTech, Computer Science and Engineering</p>
+                <h6 class="w3-text-teal" style="margin-top: 0;margin-bottom: 0; font-size: 14px;">Jul 2014 - May 2018</h6>
+                <br>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div>
+	
+
+    <footer class="w3-container w3-teal w3-center w3-margin-top">
+      <p>Follow me on</p>
+      <!-- <i class="fab fa-facebook w3-hover-opacity"><a href="#" class="fab fa-facebook w3-hover-opacity"/></i>
+			<i class="fab fa-twitter-square w3-hover-opacity"><a href="#"/></i>
+			<i class="fab fa-linkedin w3-hover-opacity"><a href="#"/></i> -->
+      <a href="#" target="_blank" class="fa fa-facebook w3-hover-opacity"></a>
+      <a href="#" target="_blank" class="fa fa-twitter-square w3-hover-opacity"></a>
+      <a href="#" target="_blank" class="fa fa-linkedin w3-hover-opacity"></a>
+      <!-- <p> <a href="#" target="_blank">mbiken©2024</a></p> -->
+	  <p> mbiken &copy 2024
+    </footer>
+
+
+
+</body>
+
+</html>
